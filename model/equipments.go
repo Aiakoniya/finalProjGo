@@ -1,16 +1,15 @@
-package model
+package main
 
 type equipment struct {
-	name string
+	name   string
 	attack int
-	def int
+	def    int
 }
 
-func newEquipment(name string, attack int, def int) *equipment{
+func newEquipment(name string, attack int, def int) *equipment {
 	return &equipment{
-		name: name,
+		name:   name,
 		attack: attack,
-		def: def,
-		}
+		def:    def,
+	}
 }
-
